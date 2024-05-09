@@ -1,5 +1,10 @@
+'use clinet'
 import type { Metadata } from "next";
-import "./globals.css";
+import './globalStyles/normalize.css'
+import './globalStyles/globals.css'
+import '@/app/globalStyles/header.css'
+import '@/app/globalStyles/menu.css'
+import Layout from "@/components/layouts/Layout";
 
 
 export const metadata: Metadata = {
@@ -15,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Layout>
+          {children}
+        </Layout>
       </body>
     </html>
   );
