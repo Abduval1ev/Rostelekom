@@ -31,7 +31,6 @@
   height: 24px;
   display: block;
   position: relative;
-  background-color: transparent;
 }
 
 .header__links__item__btn::before {
