@@ -4,6 +4,8 @@ import './globalStyles/normalize.css'
 import './globalStyles/globals.css'
 import '@/app/globalStyles/header.css'
 import '@/app/globalStyles/menu.css'
+import '@/app/globalStyles/mobile-navbar.css'
+import '@/app/globalStyles/catalogMenu.css'
 import Layout from "@/components/layouts/Layout";
 
 
