@@ -279,7 +279,7 @@
 }
 
 @media (max-width: 640px) {
-  .nav-menu__accordion__item:first-child
+  .nav-menu__accordion__item:first-child  
     .nav-menu__accordion__item__title::before {
     background-image: none;
   }

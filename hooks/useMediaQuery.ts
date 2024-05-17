@@ -1,4 +1,5 @@
-import React, { useEffect } from "react"
+'use client'
+import React from "react"
 import { getWindowWidth } from "@/lib/utils/common"
 
 const useWindowWidth = () => {
