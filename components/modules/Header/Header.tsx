@@ -4,21 +4,33 @@ import { useLang } from '@/hooks/useLangs'
 import Logo from '@/components/elements/Logo'
 import Link from 'next/link'
 import Menu from './Menu'
-import { openMenu } from '@/context/madals'
-import { addOverfloweHiddenToBody } from '@/lib/utils/common'
+import {
+    openMenu,
+    openSearchModal
+} from '@/context/modals'
+import {
+    addOverfloweHiddenToBody
+} from '@/lib/utils/common'
+import CartPopup from './CartPopup/CartPopup'
 
 export default function Header() {
-
     const { lang, translations } = useLang()
 
     const handleOpenMenu = () => {
         addOverfloweHiddenToBody()
         openMenu()
     }
+
+    const handleOpenSearchModal = () => {
+        openSearchModal()
+        addOverfloweHiddenToBody()
+    }
+
     return (
         <header className='header'>
             <div className="container header__container">
-                <button className='btn-reset header__burger' onClick={handleOpenMenu}>
+                <button className='btn-reset header__burger'
+                    onClick={handleOpenMenu}>
                     {
                         translations[lang].header.menu_btn
                     }
@@ -29,7 +41,9 @@ export default function Header() {
                 </div>
                 <ul className="header__links list-reset">
                     <li className='header__links__item'>
-                        <button className='btn-reset header__links__item__btn header__links__item__btn--search'>
+                        <button className='btn-reset header__links__item__btn header__links__item__btn--search'
+                            onClick={handleOpenSearchModal}
+                        >
                         </button>
                     </li>
                     <li className="header__links__item list-reset">
@@ -45,10 +59,7 @@ export default function Header() {
                         />
                     </li>
                     <li className='header__links__item header__links__item--cart'>
-                        <Link
-                            href='/cart'
-                            className='header__links__item__btn header__links__item__btn--cart'
-                        />
+                        <CartPopup />
                     </li>
                     <li className='header__links__item header__links__item--profile'>
                         <Link
