@@ -9,7 +9,7 @@ import { useMediaQuery } from '@/hooks/useMediaQuery'
 import CatalogMenuButton from './CatalogMenuButton'
 import CatalogMenuList from './CatalogMenuList'
 import Accordion from '../Accordion/Accordion'
-import { $catalogMenuIsOpen, closeCatalogMenu } from '@/context/madals'
+import { $catalogMenuIsOpen, closeCatalogMenu } from '@/context/modals'
 import { useLang } from '@/hooks/useLangs'
 import { removeOverfloweHiddenFromBody } from '@/lib/utils/common'
 
