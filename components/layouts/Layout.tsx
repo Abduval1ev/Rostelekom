@@ -8,6 +8,7 @@ import MobileNavBar from "../modules/MobileNavBar/MobileNavBar"
 import { AnimatePresence, motion } from "framer-motion"
 import { SearchModal } from "../modules/Header/SearchModal"
 import { useUnit } from "effector-react"
+import { Footer } from "../modules/Footer/Footer"
 
 const Layout = ({ children }: {
     children: React.ReactNode
@@ -34,12 +35,11 @@ const Layout = ({ children }: {
                     </motion.div>
                 )}
             </AnimatePresence>
-            <div className={`header__search-overlay 
-            ${searchModal ?
-                    'overlay-active' : ''}`}
+            <div className={`header__search-overlay
+             ${searchModal ? 'overlay-active' : ''}`}
                 onClick={handleCloseSearchModal}
             />
-            <div className=""></div>
+            <Footer />
         </>
     )
 }
