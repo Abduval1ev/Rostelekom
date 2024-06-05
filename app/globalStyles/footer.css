@@ -79,12 +79,12 @@
 }
 
 .footer__socials__item:first-child .footer__socials__item__link::before {
-  -webkit-mask: url(/img/telegram.svg) no-repeat 50% 50%;
-  mask: url(/img/telegram.svg) no-repeat 50% 50%;
+  -webkit-mask: url(../img/telegram.svg) no-repeat 50% 50%;
+  mask: url(../img/telegram.svg) no-repeat 50% 50%;
 }
 .footer__socials__item:last-child .footer__socials__item__link::before {
-  -webkit-mask: url(/img/basil--linkedin-outline.svg) no-repeat 50% 50%;
-  mask: url(/img/basil--linkedin-outline.svg) no-repeat 50% 50%;
+  -webkit-mask: url(../img/basil--linkedin-outline.svg) no-repeat 50% 50%;
+  mask: url(../img/basil--linkedin-outline.svg) no-repeat 50% 50%;
 }
 
 .footer__socials__item__link:hover::before {

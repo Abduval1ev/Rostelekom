@@ -133,7 +133,7 @@ export default function Menu() {
                 <div className={`nav-menu__logo ${menuIsOpen ? 'open' : ''}`}>
                     <Logo />
                 </div>
-                <img className={`nav-menu__bg ${menuIsOpen ? 'open' : ''}`} src={`/img/menu_bg${isMedia800 ? '_small' : ''}.png`} alt="menu background" />
+                <img className={`nav-menu__bg ${menuIsOpen ? 'open' : ''}`} src={`../img/menu_bg${isMedia800 ? '_small' : ''}.png`} alt="menu background" />
                 <button className={`btn-reset nav-menu__close ${menuIsOpen ? 'open' : ''}`} onClick={handleCloseMenu} />
                 <div className={`nav-menu__lang ${menuIsOpen ? 'open' : ''}`}>
                     <button
