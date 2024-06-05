@@ -20,7 +20,7 @@
   right: 13px;
   width: 14px;
   height: 8px;
-  background-image: url(/img/Pointer.svg);
+  background-image: url(../img/Pointer.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -34,7 +34,7 @@
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.06) !important;
   transition: background-color 0.2s ease-in-out;
-  background-image: url(/img/close-small.svg);
+  background-image: url(../img/close-small.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -84,7 +84,7 @@
   align-items: self-end;
   padding-left: 20px;
   justify-content: center;
-  background-image: url("/img/empty-cart.svg");
+  background-image: url("../img/empty-cart.svg");
   background-repeat: no-repeat;
   background-position: center center;
   color: #e8e9ea;
@@ -115,8 +115,8 @@
   position: absolute;
   top: 0;
   transition: background-color 0.2s ease-in-out;
-  -webkit-mask: url(/img/trash.svg) no-repeat 50% 50%;
-  mask: url(/img/trash.svg) no-repeat 50% 50%;
+  -webkit-mask: url(../img/trash.svg) no-repeat 50% 50%;
+  mask: url(../img/trash.svg) no-repeat 50% 50%;
 }
 
 .cart-list__item__delete:hover span::before {
@@ -208,13 +208,13 @@
 }
 
 .cart-list__item__counter button:first-child:before {
-  -webkit-mask: url(/img/minus.svg) no-repeat 50% 50%;
-  mask: url(/img/minus.svg) no-repeat 50% 50%;
+  -webkit-mask: url(../img/minus.svg) no-repeat 50% 50%;
+  mask: url(../img/minus.svg) no-repeat 50% 50%;
 }
 
 .cart-list__item__counter button:last-child:before {
-  -webkit-mask: url(/img/plus.svg) no-repeat 50% 50%;
-  mask: url(/img/plus.svg) no-repeat 50% 50%;
+  -webkit-mask: url(../img/plus.svg) no-repeat 50% 50%;
+  mask: url(../img/plus.svg) no-repeat 50% 50%;
 }
 
 .cart-list__item__counter span {
