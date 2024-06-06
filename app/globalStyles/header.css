@@ -45,28 +45,28 @@
 }
 
 .header__links__item__btn--search::before {
-  -webkit-mask: url(....../img/search.svg) no-repeat 50% 50%;
-  mask: url(....../img/search.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/img/search.svg) no-repeat 50% 50%;
+  mask: url(/img/search.svg) no-repeat 50% 50%;
 }
 
 .header__links__item__btn--favorites::before {
-  -webkit-mask: url(....../img/favorites.svg) no-repeat 50% 50%;
-  mask: url(....../img/favorites.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/img/favorites.svg) no-repeat 50% 50%;
+  mask: url(/img/favorites.svg) no-repeat 50% 50%;
 }
 
 .header__links__item__btn--compare::before {
-  -webkit-mask: url(..../img/comparison.svg) no-repeat 50% 50%;
-  mask: url(..../img/comparison.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/img/comparison.svg) no-repeat 50% 50%;
+  mask: url(/img/comparison.svg) no-repeat 50% 50%;
 }
 
 .header__links__item__btn--cart::before {
-  -webkit-mask: url(..../img/cart.svg) no-repeat 50% 50%;
-  mask: url(..../img/cart.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/img/cart.svg) no-repeat 50% 50%;
+  mask: url(/img/cart.svg) no-repeat 50% 50%;
 }
 
 .header__links__item__btn--profile::before {
-  -webkit-mask: url(..../img/profile.svg) no-repeat 50% 50%;
-  mask: url(..../img/profile.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/img/profile.svg) no-repeat 50% 50%;
+  mask: url(/img/profile.svg) no-repeat 50% 50%;
 }
 
 .header__links__item__btn:hover::before {
@@ -106,8 +106,8 @@
   left: 3px;
   position: absolute;
   top: 0;
-  -webkit-mask: url(..../img/burger.svg) no-repeat 50% 50%;
-  mask: url(..../img/burger.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/img/burger.svg) no-repeat 50% 50%;
+  mask: url(/img/burger.svg) no-repeat 50% 50%;
   transition: background-color 0.2s ease-in-out;
 }
 

@@ -93,8 +93,8 @@
   left: 3px;
   position: absolute;
   top: 0;
-  -webkit-mask: url(../img/close-small.svg) no-repeat 50% 50%;
-  mask: url(../img/close-small.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/img/close-small.svg) no-repeat 50% 50%;
+  mask: url(/img/close-small.svg) no-repeat 50% 50%;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -210,7 +210,7 @@
   .nav-menu__accordion__item__title::before {
   content: "";
   position: absolute;
-  background-image: url(../img/menu-line.svg);
+  background-image: url(/img/menu-line.svg);
   background-repeat: no-repeat;
   background-position: center center;
   width: 224px;
@@ -269,7 +269,7 @@
 @media (max-width: 800px) {
   .nav-menu__accordion__item:first-child
     .nav-menu__accordion__item__title::before {
-    background-image: url(../img/menu-line-small.svg);
+    background-image: url(/img/menu-line-small.svg);
     left: -200px;
   }
 
