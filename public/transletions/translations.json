@@ -111,7 +111,8 @@
       "tShirt": "T-Shirt",
       "violet": "violet",
       "orange": "orange",
-      "black": "black"
+      "black": "black",
+      "price": "760$"
     },
     "product": {
       "available": "Available",
@@ -354,7 +355,8 @@
       "tShirt": "Футболка",
       "violet": "фиолетовая",
       "orange": "оранжевая",
-      "black": "черная"
+      "black": "черная",
+      "price": "760$"
     },
     "product": {
       "available": "Есть в наличии",
