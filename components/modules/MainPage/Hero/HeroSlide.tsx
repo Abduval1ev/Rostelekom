@@ -8,7 +8,7 @@ import Styles from "@/styles/main-page/index.module.scss";
 export default function HeroSlide({ slide }: { slide: IHeroSlide }) {
     return (
         <>
-            <Link href='/catalog' className='hero__slide__plus'>
+            <Link href='/catalog' className='hero-slide-plus'>
                 <Image
                     src={slide.image}
                     alt={slide.title}
