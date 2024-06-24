@@ -50,7 +50,7 @@
     padding-right: 27px;
     height: 28px;
     line-height: 24px;
-    background-image: url("/img/Union.svg");
+    background-image: url("/Union.svg");
     background-repeat: no-repeat;
     background-position: right 2px center;
     color: #a5a8ad;
@@ -172,7 +172,7 @@
             content: "";
             width: 14px;
             height: 8px;
-            background-image: url(/public/img/popup-arrow.svg);
+            background-image: url(/public/popup-arrow.svg);
             background-repeat: no-repeat;
             background-position: center center;
 
@@ -723,8 +723,8 @@
       width: 24px;
       height: 24px;
       background-color: #e8e9ea;
-      -webkit-mask: url(/img/simple-arrow.svg) no-repeat 50% 50%;
-      mask: url(/img/simple-arrow.svg) no-repeat 50% 50%;
+      -webkit-mask: url(/simple-arrow.svg) no-repeat 50% 50%;
+      mask: url(/simple-arrow.svg) no-repeat 50% 50%;
       transition: background-color 0.2s ease-in-out;
     }
   }

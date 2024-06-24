@@ -152,7 +152,7 @@ ul li {
   background-color: #70f;
   left: 125px;
   top: 45%;
-  background-image: url("/img/plus-big.svg");
+  background-image: url("/plus-big.svg");
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 1;
@@ -208,13 +208,13 @@ ul li {
 }
 
 .counter button:first-child:before {
-  -webkit-mask: url(/img/minus.svg) no-repeat 50% 50%;
-  mask: url(/img/minus.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/minus.svg) no-repeat 50% 50%;
+  mask: url(/minus.svg) no-repeat 50% 50%;
 }
 
 .counter button:last-child:before {
-  -webkit-mask: url(/img/plus.svg) no-repeat 50% 50%;
-  mask: url(/img/plus.svg) no-repeat 50% 50%;
+  -webkit-mask: url(/plus.svg) no-repeat 50% 50%;
+  mask: url(/plus.svg) no-repeat 50% 50%;
 }
 
 .counter button:hover::before {
@@ -250,7 +250,7 @@ ul li {
 }
 
 .quick-modal-dots li.slick-active button {
-  background-image: url(/img/white-ellipse.svg) !important;
+  background-image: url(/white-ellipse.svg) !important;
 }
 
 @media (max-width: 1460px) {

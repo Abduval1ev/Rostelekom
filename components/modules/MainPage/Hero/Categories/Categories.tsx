@@ -3,21 +3,44 @@ import { AllLinks } from "@/components/elements/AllLinks/AllLinks"
 import useImagePreloader from "@/hooks/useImagePreloader"
 import { useLang } from "@/hooks/useLangs"
 import { useMediaQuery } from "@/hooks/useMediaQuery"
-import img1 from '@/public/img/categories-1.svg'
-import img2 from '@/public/img/categories-4.svg'
-import img3 from '@/public/img/categories-2.svg'
-import img4 from '@/public/img/categories-3.svg'
+import img1 from '@/public/categories-1.svg'
+import img2 from '@/public/categories-4.svg'
+import img3 from '@/public/categories-2.svg'
+import img4 from '@/public/categories-3.svg'
 
 import Styles from '@/styles/main-page/index.module.scss'
 import Image from "next/image"
 import Link from "next/link"
+import MainSlider from "../../MainSlider"
 
 const Categories = () => {
     const { lang, translations } = useLang()
-    const isMediaQuery = useMediaQuery(490)
+    const isMediaQuery490 = useMediaQuery(490)
     const { handleLoadingImageComplete, imgSpinner } = useImagePreloader()
     const imgSnipperClass = imgSpinner ? Styles.img_loading : ""
 
+    const images = [
+        {
+            id: 1,
+            title: translations[lang].main_page.category_cloth,
+            src: img1,
+        },
+        {
+            id: 2,
+            title: translations[lang].main_page.category_accessories,
+            src: img2,
+        },
+        {
+            id: 3,
+            title: translations[lang].main_page.category_souvenirs,
+            src: img3,
+        },
+        {
+            id: 4,
+            title: translations[lang].main_page.category_office,
+            src: img4,
+        },
+    ]
 
     return (
         <section className={Styles.categories}>
@@ -27,7 +50,7 @@ const Categories = () => {
                 </h2>
                 <div className={Styles.categories__inner}>
                     <AllLinks />
-                    {!isMediaQuery && <>
+                    {!isMediaQuery490 && <>
                         <Link
                             href='/catalog/cloth'
                             className={`${Styles.categories__right} ${Styles.categories__img} ${imgSnipperClass}`}
@@ -80,10 +103,10 @@ const Categories = () => {
                                     onLoad={handleLoadingImageComplete}
                                 />
                                 <span>{translations[lang].main_page.category_office}</span>
-
                             </Link>
                         </div>
                     </>}
+                    {isMediaQuery490 && <MainSlider images={images} />}
                 </div>
             </div >
         </section >
